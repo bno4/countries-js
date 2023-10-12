@@ -40,7 +40,7 @@ const displayCountries = () => {
     .slice(0, inputRange.value)
     .map((country) => {
       return `<div class = "country-container">
-      <img src="${country.flags.svg}" alt="Drapeau ${
+      <img src="${country.flags.png}" alt="Drapeau ${
         country.translations.fra.common
       }">
       <h3>${country.translations.fra.common}</h3>
