@@ -42,7 +42,7 @@ input[type="range"] {
   max-width: 1400px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -51,28 +51,37 @@ input[type="range"] {
 
 .country-container {
   display: flex;
-
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  font-family: "Courier New", Courier, monospace;
+  align-items: center;
+  justify-content: start;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(30, 30, 30);
   color: rgb(233, 233, 233);
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 10px;
   box-shadow: 1px 1px 1.5px 1px rgba(0, 0, 0, 0.566);
   text-align: center;
-}
-h2 {
-  font-size: 1.3rem;
+  min-height: 280px;
+  position: relative;
 }
 h3 {
-  margin: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+h4 {
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+p {
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 20px;
 }
 img {
   width: 150px;
-  height: 100px;
+  height: 110px;
   object-fit: cover;
   margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: rgb(30, 30, 30);
 }
